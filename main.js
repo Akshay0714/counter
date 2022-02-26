@@ -19,7 +19,7 @@ function updateClock() {
     diff = diff-(m*60);
     var s = diff;
     
-    document.getElementById("time-elapsed").innerHTML = d+" days, "+h+" hours, "+m+" minutes, "+s+" seconds with my baby";
+    document.getElementById("time-elapsed").innerHTML = d+" days, "+h+" hours, "+m+" minutes, "+s+" seconds";
 }
 
 timer = setInterval(updateClock, 1000);

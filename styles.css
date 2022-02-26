@@ -2,14 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Overpass", sans-serif;
-  background-image: url(web-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media (max-width: 768px) {
-    body {
-      background: #116163;
-    }
-  }
 }
 
 .counter {
@@ -24,10 +16,10 @@ body {
   margin: auto;
 }
 
-.subtext {
-  font-family: "Architects Daughter", cursive;
-  text-align: end;
-  margin-top: -30px;
+.subtext, .top_text {
+  font-size: medium;
+  font-family: 'Jost', sans-serif;
+  text-align: center;
   text-shadow: 10px;
   color: aliceblue;
 }
@@ -50,3 +42,16 @@ body {
       0 0 50px #0d7b83, 0 0 60px #0d7b83, 0 0 70px #0d7b83, 0 0 80px #0d7b83;
   }
 }
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(web-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   
+  @media (max-width: 768px) {
+    body {
+      background: #116163;
+    }
+  }
