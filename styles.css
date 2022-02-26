@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  background-image: url(web-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 768px) {
+    body {
+      background: #116163;
+    }
+  }
+}
+
+.counter {
+  width: 650px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.subtext {
+  font-family: "Architects Daughter", cursive;
+  text-align: end;
+  margin-top: -30px;
+  text-shadow: 10px;
+  color: aliceblue;
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0d7b83,
+      0 0 40px #0d7b83, 0 0 50px #0d7b83, 0 0 60px #0d7b83, 0 0 70px #0d7b83;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0fc26e, 0 0 40px #0d7b83,
+      0 0 50px #0d7b83, 0 0 60px #0d7b83, 0 0 70px #0d7b83, 0 0 80px #0d7b83;
+  }
+}
