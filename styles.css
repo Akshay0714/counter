@@ -1,3 +1,13 @@
+
+.feedback {
+  background: transparent;
+  position: absolute;
+  border: none !important;
+  bottom: 125px;
+  right: 90px;
+  width: 70px;
+  height: 20px;
+}
 body {
   margin: 0;
   padding: 0;
